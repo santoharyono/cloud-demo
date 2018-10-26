@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: catalog
+  cloud:
+    config:
+      failFast: true
+      discovery:
+        enabled: true
+        serviceId: configsvr
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10001/eureka,http://localhost:10002/eureka
